@@ -44,12 +44,12 @@
 		{
 			if($isSSL)
 			{	
-				$fp = fsockopen("$popserver", 995, $errno, &$errstr);
+				$fp = fsockopen("$popserver", 995, $errno, $errstr);
 			}
 	
 			else
 			{
-				$fp = fsockopen("$popserver", 110, $errno, &$errstr);
+				$fp = fsockopen("$popserver", 110, $errno, $errstr);
 			}
 	
 			if(!$fp)
